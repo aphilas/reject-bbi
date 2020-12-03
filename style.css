@@ -31,4 +31,6 @@ h1{
 footer {
   font-size: .75em;
   padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
