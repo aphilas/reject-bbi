@@ -7,6 +7,11 @@
   padding-left: 1em;
 }
 
+.header-title > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-list {
   list-style-type: none;
   padding-left: 0;
