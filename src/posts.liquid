@@ -35,8 +35,7 @@ pagination:
 
         <p>
           {% if post.data.author -%}
-            {%- assign author = authors[post.data.author] -%} 
-              <span class="author">By {{ post.data.author -}}</span>
+            <span class="author">By {{ post.data.author -}}</span>
           {%- endif -%}
         </p>
       </li>
