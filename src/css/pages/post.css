@@ -1,2 +1,8 @@
 @import "../config.css";
 @import "../components/header.css";
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
