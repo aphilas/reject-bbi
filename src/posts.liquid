@@ -20,7 +20,7 @@ pagination:
 
   {% assign posts = collections.post -%}
 
-  {% if posts.first %}
+  {% if posts.size > 0 %}
     <ul class="post-list">
       {%- for post in posts %}
         <li>
