@@ -1,0 +1,27 @@
+@import "../config.css";
+@import "../components/header.css";
+
+.post-list {
+  list-style-type: none;
+  padding-left: .5em;
+}
+
+.post-list > li h2 {
+  margin-bottom: .25em;
+}
+
+.post-list > li p {
+  margin-top: 0;
+}
+
+.post-list > li a {
+  text-decoration: none;
+}
+
+.extract {
+  margin-bottom: .25em;
+}
+
+.author {
+  margin-right: .5em;
+}

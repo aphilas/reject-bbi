@@ -1,0 +1,57 @@
+---
+pagination: 
+  data: collections.post
+  size: 10
+  alias: posts
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head-content.liquid %}
+
+  <link rel="stylesheet" href="/css/pages/posts.css">
+</head>
+
+<body>
+  {% include header.liquid %}
+
+  <h1>Posts</h1>
+
+  {% assign posts = collections.post -%}
+
+  <ul class="post-list">
+    {%- for post in posts %}
+      <li>
+        <a href="{{- post.url -}}" class="post-title">
+          <h2>
+          {{- post.data.title -}}
+          </h2>
+        </a>
+
+        {%- if post.data.extract -%}
+          <p class="extract">{{ post.data.extract }}...</p>
+        {%- endif -%}
+
+        <p>
+          {% if post.data.author -%}
+            {%- assign author = authors[post.data.author] -%} 
+              <span class="author">By {{ post.data.author -}}</span>
+          {%- endif -%}
+        </p>
+      </li>
+    {%- endfor %}
+  </ul>
+
+  <p>
+    {% if pagination.href.previous  %}
+      <a href="{{ pagination.href.previous }}">< Previous Page</a>
+    {% endif %}
+
+    {% if pagination.href.next  %}
+      <a href="{{ pagination.href.next }}">Next Page ></a>
+    {% endif %}
+  </p>
+</body>
+</html>
+
