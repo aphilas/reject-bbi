@@ -20,27 +20,31 @@ pagination:
 
   {% assign posts = collections.post -%}
 
-  <ul class="post-list">
-    {%- for post in posts %}
-      <li>
-        <a href="{{- post.url -}}" class="post-title">
-          <h2>
-          {{- post.data.title -}}
-          </h2>
-        </a>
+  {% if posts.first %}
+    <ul class="post-list">
+      {%- for post in posts %}
+        <li>
+          <a href="{{- post.url -}}" class="post-title">
+            <h2>
+            {{- post.data.title -}}
+            </h2>
+          </a>
 
-        {%- if post.data.extract -%}
-          <p class="extract">{{ post.data.extract }}...</p>
-        {%- endif -%}
-
-        <p>
-          {% if post.data.author -%}
-            <span class="author">By {{ post.data.author -}}</span>
+          {%- if post.data.extract -%}
+            <p class="extract">{{ post.data.extract }}...</p>
           {%- endif -%}
-        </p>
-      </li>
-    {%- endfor %}
-  </ul>
+
+          <p>
+            {% if post.data.author -%}
+              <span class="author">By {{ post.data.author -}}</span>
+            {%- endif -%}
+          </p>
+        </li>
+      {%- endfor %}
+    </ul>
+  {% else %}
+    <p>More posts will be up soon!</p>
+  {% endif %}
 
   <p>
     {% if pagination.href.previous  %}
