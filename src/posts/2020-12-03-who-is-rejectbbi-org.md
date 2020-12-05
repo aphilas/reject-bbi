@@ -1,6 +1,6 @@
 ---
 title: Who is rejectbbi.org?
-author: Jake Sullivan
+author: Wanjiku
 ---
 RejectBBI.org is a team that is setting up a platform to counter the pro-BBI movement. We aim to educate on what the BBI is, and objectively critique it.
 
