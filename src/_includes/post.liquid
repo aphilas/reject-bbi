@@ -9,7 +9,10 @@
 
   <main class="main">
     <h1>{{ title }}</h1>
-    <h4>By {{ author }}</h4>
+
+    {% if author -%}
+      <h4>By {{ author }}</h4>
+    {%- endif -%}
 
     {{ content }}
 
