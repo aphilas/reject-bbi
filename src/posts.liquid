@@ -18,7 +18,7 @@ pagination:
 
   <h1>Posts</h1>
 
-  {% assign posts = collections.post -%}
+  {% assign posts = collections.post reverse -%}
 
   {% if posts.size > 0 %}
     <ul class="post-list">
