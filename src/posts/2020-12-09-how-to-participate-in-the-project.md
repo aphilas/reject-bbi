@@ -18,11 +18,13 @@ Help us improve the website and introduce new features. The project is hosted on
 
 ### Sharing
 
-Spread the word, share the link to our website and posts.
+Spread the word and share the link to our website and posts.
 
 ### Involving others
 
 Invite other people to contribute through any of the means listed above.
+
+---
 
 [Contact us](mailto:info@rejectbbi.org) and let us know how we can help you participate.
 
