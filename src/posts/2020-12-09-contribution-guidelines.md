@@ -1,5 +1,7 @@
 ---
 title: Contribution guidelines
+author: RejectBBI Team
+extract: ""
 ---
 We hope to provide a fair platform for dissenting voices at here at [rejectbbi.org](https://rejectbbi.org). However, we also strive to be a reputable source of high quality information to our readers. Before submitting an article for publishing please review the following guidelines to increase the chances of your post being approved.
 
