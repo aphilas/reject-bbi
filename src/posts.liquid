@@ -47,13 +47,13 @@ pagination:
   {% endif %}
 
   <p>
-    {% if pagination.href.previous  %}
+    {%- if pagination.href.previous  %}
       <a href="{{ pagination.href.previous }}">< Previous Page</a>
-    {% endif %}
+    {% endif -%}
 
-    {% if pagination.href.next  %}
+    {%- if pagination.href.next  %}
       <a href="{{ pagination.href.next }}">Next Page ></a>
-    {% endif %}
+    {% endif -%}
   </p>
 </body>
 </html>
