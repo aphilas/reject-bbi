@@ -11,6 +11,7 @@
   max-width: 700px;
   margin: 0 auto;
   text-align: justify;
+  padding: 0 var(--space-sm);
 }
 
 .post-author {
