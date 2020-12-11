@@ -1,5 +1,11 @@
 @import "../config.css";
+@import "../generic.css";
+@import "../elements/elements.css";
+@import "../objects.css";
+
 @import "../components/header.css";
+
+@import "../trumps.css";
 
 body {
   display: flex;
@@ -22,11 +28,6 @@ html {
   align-items: center;
   flex-grow: 2;
   justify-content: center;
-}
-
-h1{
-  font-weight: 500;
-  padding: 1em;
 }
 
 footer {

@@ -5,11 +5,16 @@
 
 .header-title {
   padding-left: 1em;
+  font-weight: bold;
 }
 
 .header-title > a {
   text-decoration: none;
   color: inherit;
+}
+
+.header-title > a:hover {
+  text-decoration: underline;
 }
 
 .nav-list {
