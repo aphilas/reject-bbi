@@ -23,20 +23,20 @@ pagination:
   {% if posts.size > 0 %}
     <ul class="post-list">
       {%- for post in posts %}
-        <li>
-          <a href="{{- post.url -}}" class="post-title">
-            <h2>
+        <li class="postitem">
+          <a href="{{- post.url -}}" class="postitem-link">
+            <h3 class="postitem-heading">
             {{- post.data.title -}}
-            </h2>
+            </h3>
           </a>
 
           {%- if post.data.extract -%}
-            <p class="extract">{{ post.data.extract }}...</p>
+            <p class="postitem-extract">{{ post.data.extract }}...</p>
           {%- endif -%}
 
-          <p>
+          <p> 
             {% if post.data.author -%}
-              <span class="author">By {{ post.data.author -}}</span>
+              <span class="postitem-author">By {{ post.data.author -}}</span>
             {%- endif -%}
           </p>
         </li>
