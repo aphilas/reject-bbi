@@ -4,14 +4,14 @@
   {% include head-content.liquid %}
   <link rel="stylesheet" href="/css/pages/post.css">
 </head>
-<body>
+<body> 
   {% include header.liquid %}
 
   <main class="main">
     <h1>{{ title }}</h1>
 
     {% if author -%}
-      <h5>By {{ author }}</h5>
+      <h5 class="post-author">By {{ author }}</h5>
     {%- endif -%}
 
     {{ content }}
