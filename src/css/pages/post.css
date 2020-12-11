@@ -1,5 +1,11 @@
 @import "../config.css";
+@import "../generic.css";
+@import "../elements/elements.css";
+@import "../objects.css";
+
 @import "../components/header.css";
+
+@import "../trumps.css";
 
 .main {
   max-width: 800px;
