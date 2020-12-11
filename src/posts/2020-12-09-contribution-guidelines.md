@@ -7,7 +7,7 @@ We hope to provide a fair platform for dissenting voices at here at [rejectbbi.o
 
 ## Authorship guidelines
 ### Respectfulness
-Respect the opinions of other think tanks. Do not attack the character or other attributes of a person making an argument, but rather attack the idea itself ([Ad hominem attacks](https://www.txstate.edu/philosophy/resources/fallacy-definitions/Ad-Hominem.html)). 
+Respect the opinions of other think tanks. Do not attack the character or other attributes of a person making an argument, but rather attack the idea itself ([ad hominem attacks](https://www.txstate.edu/philosophy/resources/fallacy-definitions/Ad-Hominem.html)). 
 
 ### Thoroughness
 Ensure due research is made about the subject matter. Consult alternative authorities, with respect to the guidelines on "permissions." Avoid click-baity articles, baseless claims, or otherwise filler text that does not move the discussion forward.
