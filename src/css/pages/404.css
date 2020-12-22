@@ -1,2 +1,9 @@
 @import "../config.css";
+@import "../generic.css";
+@import "../elements/elements.css";
+@import "../objects.css";
+
 @import "../components/header.css";
+@import "../components/footer.css";
+
+@import "../trumps.css";

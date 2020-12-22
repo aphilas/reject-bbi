@@ -16,45 +16,49 @@ pagination:
 <body>
   {% include header.liquid %}
 
-  <h1>Posts</h1>
+  <main class="main">
+    <h1>Posts</h1>
 
-  {% assign posts = collections.post reverse -%}
+    {% assign posts = collections.post reverse -%}
 
-  {% if posts.size > 0 %}
-    <ul class="post-list">
-      {%- for post in posts %}
-        <li class="postitem">
-          <a href="{{- post.url -}}" class="postitem-link">
-            <h3 class="postitem-heading">
-            {{- post.data.title -}}
-            </h3>
-          </a>
+    {% if posts.size > 0 %}
+      <ul class="post-list">
+        {%- for post in posts %}
+          <li class="postitem">
+            <a href="{{- post.url -}}" class="postitem-link">
+              <h3 class="postitem-heading">
+              {{- post.data.title -}}
+              </h3>
+            </a>
 
-          {%- if post.data.extract -%}
-            <p class="postitem-extract">{{ post.data.extract }}...</p>
-          {%- endif -%}
-
-          <p> 
-            {% if post.data.author -%}
-              <span class="postitem-author">By {{ post.data.author -}}</span>
+            {%- if post.data.extract -%}
+              <p class="postitem-extract">{{ post.data.extract }}...</p>
             {%- endif -%}
-          </p>
-        </li>
-      {%- endfor %}
-    </ul>
-  {% else %}
-    <p>More posts will be up soon!</p>
-  {% endif %}
 
-  <p>
-    {%- if pagination.href.previous  %}
-      <a href="{{ pagination.href.previous }}">< Previous Page</a>
-    {% endif -%}
+            <p> 
+              {% if post.data.author -%}
+                <span class="postitem-author">By {{ post.data.author -}}</span>
+              {%- endif -%}
+            </p>
+          </li>
+        {%- endfor %}
+      </ul>
+    {% else %}
+      <p>More posts will be up soon!</p>
+    {% endif %}
 
-    {%- if pagination.href.next  %}
-      <a href="{{ pagination.href.next }}">Next Page ></a>
-    {% endif -%}
-  </p>
+    <p>
+      {%- if pagination.href.previous  %}
+        <a href="{{ pagination.href.previous }}">< Previous Page</a>
+      {% endif -%}
+
+      {%- if pagination.href.next  %}
+        <a href="{{ pagination.href.next }}">Next Page ></a>
+      {% endif -%}
+    </p>
+  </main>
+
+  {% include footer.liquid %}
 </body>
 </html>
 

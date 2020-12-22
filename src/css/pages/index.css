@@ -4,6 +4,7 @@
 @import "../objects.css";
 
 @import "../components/header.css";
+@import "../components/footer.css";
 
 @import "../trumps.css";
 
@@ -28,11 +29,4 @@ html {
   align-items: center;
   flex-grow: 2;
   justify-content: center;
-}
-
-footer {
-  font-size: .75em;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
 }
